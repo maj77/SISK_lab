@@ -94,9 +94,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  MX_SPI1_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
-  nRF24_Init(&hspi1);
+  nRF24_Init(&hspi2);
   nRF24_SetRXAddress(0, "Nad");
   nRF24_SetTXAddress("Odb");
   nRF24_TX_Mode();
